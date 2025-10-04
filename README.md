@@ -1,28 +1,10 @@
 # Project 7 – Data Types and Data Import
 
-Welcome to Project 7! This repo is pre-scaffolded for GitHub Classroom. You will write all of your code in **`project7.R`** and commit/push your work.
+Welcome to Project 7! You will write all of your code in **`project7.R`** and commit/push your work back to GitHub Classroom.
 
-## Repo Layout
-```
-.
-├── project7.R          # Starter R script – do all your work here
-├── data-raw/           # Input data (provided by instructor)
-│   ├── cat-lovers.csv
-│   ├── nobel.csv
-│   └── sales.xlsx
-├── data/               # Your outputs (you create these)
-│   ├── nobel_stem.csv
-│   └── nobel_nonstem.csv
-├── README.md           # This file
-├── rubric.md           # How this project will be graded
-├── .gitignore          # Standard R ignores
-└── Project7.Rproj      # Optional RStudio project file
-```
-
-> If any of the input files are missing, sync/pull from GitHub first. If they’re still missing, contact your instructor.
 
 ## Getting Started
-1. **Clone** your GitHub Classroom repository (Open in RStudio if you use it).
+1. **Clone** your GitHub Classroom repository.
 2. Open **`project7.R`** and follow the TODOs.
 3. Make sure the `data-raw/` folder contains:
    - `cat-lovers.csv`
@@ -35,7 +17,6 @@ Welcome to Project 7! This repo is pre-scaffolded for GitHub Classroom. You will
 - Read `data-raw/cat-lovers.csv`.
 - Clean obvious issues (types, trimming, missing values).
 - Compute average, min, and max cats per person.
-- Print a short report.
 
 ### Q2 – Data Conversion
 For each vector, guess the type, then verify with `typeof()` and `class()`. Note anything surprising.
@@ -57,15 +38,11 @@ c(NA, TRUE)
 > Hint: Use `%in%` in `dplyr::filter()`.
 
 ### Q4 – Import & Clean Excel
-- Read `data-raw/sales.xlsx`.
-- Clean/reshape to match the target structure shown in class (column names, types, arrangement).
-- (Optional) Save a cleaned CSV to `data/sales_clean.csv`.
-
-## How to Run
-- Source the whole script:
-  - RStudio: **Run All** (Ctrl/Cmd + Shift + Enter)
-  - Base R: `source("project7.R")`
-- Or run sections line-by-line.
+- Read `data-raw/sales.xlsx` to get it into this format:
+![Sales Data Target Example 1](images/sales_example1.png)
+- Clean/reshape to match this structure
+![Sales Data Target Example 2](images/sales_example2.png)
+- Save a cleaned CSV to `data/sales_clean.csv`.
 
 ## Submission
 1. **Commit** your changes with informative messages.
