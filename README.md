@@ -38,10 +38,19 @@ c(NA, TRUE)
 > Hint: Use `%in%` in `dplyr::filter()`.
 
 ### Q4 – Import & Clean Excel
-- Read `data-raw/sales.xlsx` to get it into this format:
-![Sales Data Target Example 1](images/sales_example1.png)
-- Clean/reshape to match this structure
-![Sales Data Target Example 2](images/sales_example2.png)
+
+Read `data-raw/sales.xlsx` to get it into this format:
+<br>
+<p align="left">
+  <img src="images/sales_example1.png" alt="Raw sales tibble" width="200">
+</p>
+
+Then clean it so it looks like this:
+<br>
+<p align="left">
+  <img src="images/sales_example2.png" alt="Cleaned sales tibble" width="200">
+</p>
+
 - Save a cleaned CSV to `data/sales_clean.csv`.
 
 ## Submission
